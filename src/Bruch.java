@@ -9,16 +9,21 @@ public class Bruch {
     }
 
     public int getNumerator() {
+
         return numerator;
     }
 
     public int getDenominator() {
+
         return denominator;
     }
 
     public double toDecimal() {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
+        if (getDenominator() != 0) {
+            return (double)getNumerator()/(double) getDenominator();
+        }
         return 0;
     }
 
